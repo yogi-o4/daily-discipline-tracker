@@ -1,6 +1,5 @@
 # daily-discipline-tracker-2
 to help princess boyfriend
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
