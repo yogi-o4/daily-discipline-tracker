@@ -1,5 +1,4 @@
-# daily-discipline-tracker-2
-to help princess boyfriend
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -50,6 +49,7 @@ to help princess boyfriend
     <div class="task"><input type="checkbox" id="bath" /> Bath</div>
     <div class="task"><input type="checkbox" id="sheets" /> Fold Sheets</div>
     <div class="task"><input type="checkbox" id="water" /> Drank 3 Ltr Water</div>
+    <div class="task"><input type="checkbox" id="charge" /> Charge Phone Every 3 Hrs</div>
   </div>
   <button id="submitBtn">Submit Today's Tasks</button>
   <div id="status"></div>
@@ -62,7 +62,8 @@ to help princess boyfriend
       return document.getElementById('brush').checked &&
              document.getElementById('bath').checked &&
              document.getElementById('sheets').checked &&
-             document.getElementById('water').checked;
+             document.getElementById('water').checked &&
+             document.getElementById('charge').checked;
     }
 
     function resetCheckboxes() {
@@ -117,7 +118,6 @@ to help princess boyfriend
       }
     });
 
-    // Load current streak on page load
     window.addEventListener('load', () => {
       const streak = getStreak();
       updateStatus(streak);
@@ -125,4 +125,3 @@ to help princess boyfriend
   </script>
 </body>
 </html>
-
