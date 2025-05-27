@@ -111,7 +111,7 @@
         storeTodayCompletion();
         const streak = getStreak();
         updateStatus(streak);
-        privilegesDiv.innerHTML = "<strong>You've unlocked Boobie Privileges!</strong><br>Contact Goddess for reward.";
+        window.location.href = 'boobie.html';
         resetCheckboxes();
       } else {
         alert("Please complete all tasks before submitting.");
