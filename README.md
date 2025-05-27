@@ -1,5 +1,3 @@
-# daily-discipline-tracker
-for anmol to keep him on track
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,11 +72,6 @@ for anmol to keep him on track
 
     function updateStatus(days) {
       statusDiv.textContent = `You've completed your tasks ${days} day(s) in a row.`;
-      if (days >= 4) {
-        privilegesDiv.textContent = "Congratulations! You've unlocked Boobie Privileges!";
-      } else {
-        privilegesDiv.textContent = '';
-      }
     }
 
     function getTodayKey() {
@@ -118,6 +111,7 @@ for anmol to keep him on track
         storeTodayCompletion();
         const streak = getStreak();
         updateStatus(streak);
+        privilegesDiv.innerHTML = "<strong>You've unlocked Boobie Privileges!</strong><br>Contact Goddess for reward.";
         resetCheckboxes();
       } else {
         alert("Please complete all tasks before submitting.");
